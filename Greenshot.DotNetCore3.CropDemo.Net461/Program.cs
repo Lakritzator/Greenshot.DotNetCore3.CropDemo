@@ -21,7 +21,7 @@ namespace Greenshot.DotNetCore3.CropDemo.Net461
             LogSettings.RegisterDefaultLogger<DebugLogger>(LogLevels.Verbose);
 
             // This should not be needed, the app.manifest should do this, but somehow it doesn't
-            NativeDpiMethods.EnableDpiAware();
+            //NativeDpiMethods.EnableDpiAware();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
