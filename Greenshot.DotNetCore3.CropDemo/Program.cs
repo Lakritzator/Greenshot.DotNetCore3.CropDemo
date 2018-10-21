@@ -6,6 +6,7 @@ using System.Linq;
 using Dapplo.Windows.Dpi;
 using Dapplo.Log;
 using Dapplo.Log.Loggers;
+using Dapplo.Windows.Dpi.Enums;
 
 namespace Greenshot.DotNetCore3.CropDemo
 {
@@ -20,8 +21,8 @@ namespace Greenshot.DotNetCore3.CropDemo
         {
             LogSettings.RegisterDefaultLogger<DebugLogger>(LogLevels.Verbose);
 
-            // This should not be needed, the app.manifest should do this, but somehow it doesn't
-            NativeDpiMethods.EnableDpiAware();
+            // This should not be needed, the app.manifest should do this, but this is currently not supported
+            NativeDpiMethods.SetProcessDpiAwarenessContext(DpiAwarenessContext.PerMonitorAwareV2);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
