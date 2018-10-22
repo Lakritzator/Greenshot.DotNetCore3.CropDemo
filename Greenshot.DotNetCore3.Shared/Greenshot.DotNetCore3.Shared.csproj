@@ -35,10 +35,10 @@
 
   <ItemGroup>
     <PackageReference Include="Dapplo.Config" Version="1.0.6" />
-    <PackageReference Include="Dapplo.Windows" Version="0.7.10-beta.g79f0bbc2b8" />
-    <PackageReference Include="Dapplo.Windows.Dpi" Version="0.7.10-beta.g79f0bbc2b8" />
-    <PackageReference Include="Dapplo.Windows.Icons" Version="0.7.10-beta.g79f0bbc2b8" />
-    <PackageReference Include="Fody" Version="3.2.10">
+    <PackageReference Include="Dapplo.Windows" Version="0.7.15" />
+    <PackageReference Include="Dapplo.Windows.Dpi" Version="0.7.15" />
+    <PackageReference Include="Dapplo.Windows.Icons" Version="0.7.15" />
+    <PackageReference Include="Fody" Version="3.2.13">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
